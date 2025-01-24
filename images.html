@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <img src="icecream1.png" width="400px" alt="no image" />
+
+    <!-- <img src="./icecream.png" alt="no image" /> -->
+
+    <picture>
+        <source media="(min-width:650px)" srcset="./icecream5.png"/>
+        <img src="icecream2.png" alt="no image"/>
+    </picture>
+
+    <!-- an image map generator -->
+
+    <img src="icecream.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="butterfly" href="" coords="2,61,58,125" shape="rect">
+        <area onclick="two()" target="" alt="" title="icecream" href="" coords="182,134,101" shape="circle">
+    </map>
+
+    <script>
+        function one(){
+            alert("you clikced on one")
+        }
+
+        function two(){
+            alert("you clikced on two")
+        }
+    </script>
+
+</body>
+</html>
